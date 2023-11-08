@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Roboto&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -28,10 +30,6 @@ body {
   color: #46736e;
 }
 
-.hero {
-  position: relative;
-}
-
 .hero img {
   width: 100vw;
   height: 100vh;
@@ -48,10 +46,10 @@ body {
 }
 
 .hero-text hr {
-  width: 250px; 
-  height: 2px; 
-  background-color: white; 
-  border: none; 
+  width: 250px;
+  height: 2px;
+  background-color: white;
+  border: none;
 }
 
 .flex-container {
@@ -79,14 +77,19 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-family: "Finger Paint", sans-serif;
+  font-size: 4rem;
   margin-bottom: 20px;
 }
 
 h2 {
+  font-family: monospace;
   font-size: 20px;
 }
 
+h2.software {
+font-size:3rem;
+}
 h3 {
   color: #46736e;
 }
@@ -96,59 +99,85 @@ p {
 }
 
 .switchfully {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .image-container {
-    display: inline-block;
+  display: inline-block;
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px; 
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
 }
 
 .text-container {
-    margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .text-container p {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .text-container strong {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .footer ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 .footer ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .footer ul li a:hover {
-    color: #46736e;
+  color: #46736e;
 }
 
+.div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container, .text-container {
+    flex:1;
+    width: 100%;
+    gap: 0.5rem;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+@media (max-width:400px){
+    .flex-container {
+        flex-direction: column;
+    }
+    .box{
+         width: 90%;
+         padding: 0.3re,;
+    }
+    .div-container{
+        flex-direction: column;
+    }
+}
