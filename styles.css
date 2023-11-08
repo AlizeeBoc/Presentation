@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  text-align: right;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #46736e;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-text hr {
+  width: 250px; 
+  height: 2px; 
+  background-color: white; 
+  border: none; 
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.box {
+  width: 30%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+.switchfully img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  color: #46736e;
+}
+
+p {
+  text-align: left;
+}
+
+.switchfully {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-container {
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px; 
+}
+
+.text-container {
+    margin-top: 20px; 
+}
+
+.text-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.text-container strong {
+    font-size: 16px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer ul li a:hover {
+    color: #46736e;
+}
+
